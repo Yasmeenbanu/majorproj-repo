@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Voter</string>
+    <string name="error">Error!</string>
+    <string name="check_internet_connection">Please check your internet</string>
+    <string name="instructions">
+Place your fingertip on the Home button to verify your identity
+</string>
+</resources>

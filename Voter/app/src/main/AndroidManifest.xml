@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.pmap.voter">
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.fingerprint"
+        android:required="true"/>
+    <uses-permission
+        android:name="android.permission.USE_FINGERPRINT" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:icon,android:theme"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.UserLoginActivity"></activity>
+        <activity android:name=".VoterCandidate"></activity>
+        <activity android:name=".activities.CreateElection"></activity>
+        <activity android:name=".VoterActivity"></activity>
+        <activity android:name=".CandidatesActivity"></activity>
+        <activity android:name=".activities.CandidateListActivity"></activity>
+        <activity android:name=".activities.FingerprintActivity"></activity>
+        <activity android:name=".activities.ElectionListActivity"></activity>
+        <activity android:name=".activities.ElectionResultActivity"></activity>
+        <activity android:name=".activities.VoterDashboard"></activity>
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
